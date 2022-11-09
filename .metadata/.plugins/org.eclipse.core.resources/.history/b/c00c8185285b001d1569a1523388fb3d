@@ -1,0 +1,10 @@
+package Batch1Test;
+
+public class FirstSeleniumClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

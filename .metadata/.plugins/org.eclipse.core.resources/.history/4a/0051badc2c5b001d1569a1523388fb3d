@@ -1,0 +1,19 @@
+package Batch1Test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LaunchingFacebook {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver","C:\\Snehal\\Full Stack Tester\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		// webdriver is interface and chromedriver is class
+		
+		driver.get("https://www.facebook.com/");
+
+	}
+
+}

@@ -1,0 +1,113 @@
+package StepDefination;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class SignUpClass {
+
+	WebDriver driver;
+
+@Given("Open URL {string}")
+public void open_URL(String string) {
+    // Write code here that turns the phrase above into concrete actions
+   // throw new cucumber.api.PendingException();
+	System.setProperty("webdriver.chrome.driver","C:\\Snehal\\Full Stack Tester\\Selenium\\chromedriver_win32\\chromedriver.exe");
+	driver=new ChromeDriver();
+	// webdriver is interface and chromedriver is class
+	
+	driver.get("http://elearningm1.upskills.in/");
+}
+
+@When("Click on Sign up")
+public void click_on_Sign_up() {
+
+	driver.findElement(By.xpath("//*[@id=\"login_block\"]/div/ul/li/a"));
+	System.out.println("User click on Sign Up Button");
+	
+}
+
+@When("Fill up all the fields and then tap on register button")
+public void fill_up_all_the_fields_and_then_tap_on_register_button() {
+ System.out.println("User enter First Name ");
+ ////*[@id="registration"]/fieldset/div[1]/div[1]/input
+ driver.findElement(By.name("firstname")).sendKeys("Snehal2392");
+ 
+ System.out.println("User Enter Last Name ");
+ driver.findElement(By.xpath("//*[@id=\"registration\"]/fieldset/div[2]/div[1]/input")).sendKeys("Mhatre");  
+ 
+ System.out.println("User Enter Last Name ");
+ driver.findElement(By.xpath("//*[@id=\"registration\"]/fieldset/div[3]/div[1]/input")).sendKeys("Mhatre@sne.in");  
+ 
+ System.out.println("User Enter ID ");
+ driver.findElement(By.id("username")).sendKeys("Sneh23");
+ 
+ System.out.println("User enter Password");
+ driver.findElement(By.id("pass1")).sendKeys("abcde");
+ 
+ System.out.println("User enter confirm password");
+ driver.findElement(By.id("pass2")).sendKeys("abcde");
+ 
+ System.out.println("User Click on submit buttton");
+ driver.findElement(By.xpath("//*[@id=\"registration\"]/fieldset/div[16]/div[1]/button")).click();
+	
+}
+
+@Then("After successsful registeration , verify that the next button is visible")
+public void after_successsful_registeration_verify_that_the_next_button_is_visible() {
+   System.out.println("Check Next button visible  >>>"+driver.findElement(By.xpath("//*[@id=\"form_register\"]/fieldset/button")).isDisplayed());
+}
+
+@Then("Click on Next")
+public void click_on_Next() {
+    // Write code here that turns the phrase above into concrete actions
+   System.out.println("User click on next button");
+   driver.findElement(By.xpath("//*[@id=\"form_register\"]/fieldset/button")).click();
+   
+}
+
+@Then("Click on name dropdwon")
+public void click_on_name_dropdwon() {
+    // Write code here that turns the phrase above into concrete actions
+	System.out.println("User click on Name Drop Down ");
+	driver.findElement(By.xpath("//a[@role='button']")).click();
+	
+
+}
+
+@Then("Click on Profile")
+public void click_on_Profile() {
+    // Write code here that turns the phrase above into concrete actions
+    System.out.println("User click on profile");
+    driver.findElement(By.xpath("//a[normalize-space()='Profile']")).click();
+}
+
+@Then("CLick on messages")
+public void click_on_messages() {
+    System.out.println("User click on Messages Option");
+    driver.findElement(By.xpath("//a[normalize-space()='Messages']")).click();
+}
+
+@Then("Click on Compose message")
+public void click_on_Compose_message() {
+    // Write code here that turns the phrase above into concrete actions
+   System.out.println("User click on compose message");
+   driver.findElement(By.xpath("//img[@title='Compose message']")).click();
+}
+
+@Then("Fill up the fields  send to subject , message")
+public void fill_up_the_fields_send_to_subject_message() {
+    System.out.println("Enter Subject line");
+    driver.findElement(By.xpath("//*[@id=\"compose_message\"]/fieldset/div[2]/div[1]/input")).sendKeys("HELLO MY PROJECT");
+}
+
+@Then("Click on send message")
+public void click_on_send_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+}

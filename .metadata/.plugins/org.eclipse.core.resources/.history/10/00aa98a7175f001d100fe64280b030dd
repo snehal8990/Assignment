@@ -1,0 +1,15 @@
+package TestRun;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features = {"src/test/java/Features/LaunchingGoogle.Feature"},
+glue = {"StepDefination"},
+tags = {"@Regression"})
+
+public class TestRunner {
+
+}

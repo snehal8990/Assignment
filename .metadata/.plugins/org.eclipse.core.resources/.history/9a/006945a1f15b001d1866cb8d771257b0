@@ -1,0 +1,10 @@
+package Batch1Test;
+
+public class FirstTsetNGAnnotation {
+
+	@Test
+	public void FirstTSNGM1() {
+		System.out.println("Hello1");
+	}
+	
+}

@@ -1,0 +1,80 @@
+package StepDefination;
+
+import org.openqa.selenium.WebDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class SignUpClass {
+
+	WebDriver driver;
+
+@Given("Open URL {string}")
+public void open_URL(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@When("Click on Sign up")
+public void click_on_Sign_up() {
+    // Write code here that turns the phrase above into concrete actions
+    // throw new cucumber.api.PendingException();
+	
+	//*[@id="login_block"]/div/ul/li/a
+}
+
+@When("Fill up all the fields and then tap on register button")
+public void fill_up_all_the_fields_and_then_tap_on_register_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("After successsful registeration , verify that the next button is visible")
+public void after_successsful_registeration_verify_that_the_next_button_is_visible() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("Click on Next")
+public void click_on_Next() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("Click on name dropdwon")
+public void click_on_name_dropdwon() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("Click on Profile")
+public void click_on_Profile() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("CLick on messages")
+public void click_on_messages() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("Click on Compose message")
+public void click_on_Compose_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("Fill up the fields  send to subject , message")
+public void fill_up_the_fields_send_to_subject_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("Click on send message")
+public void click_on_send_message() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+}

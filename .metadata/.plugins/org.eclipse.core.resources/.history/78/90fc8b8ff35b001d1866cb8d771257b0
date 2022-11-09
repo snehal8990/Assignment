@@ -1,0 +1,9 @@
+package Batch1Test;
+
+public class SecondTestNGClass {
+
+	@Test
+	public void ndMethod() {
+		System.out.println("2nd class method 1");
+	}
+}

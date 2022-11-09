@@ -1,0 +1,7 @@
+Feature: Launching FB Login
+
+Scenario: Login to Facebook Account
+
+Given The Facebook website launch
+When Check user id and password field present
+Then Enter user id and password

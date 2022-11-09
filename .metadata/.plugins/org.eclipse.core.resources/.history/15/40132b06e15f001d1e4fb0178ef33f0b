@@ -1,0 +1,64 @@
+package StepDefination;
+
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class CalculatorBMI {
+	WebDriver driver;
+	@Given("Open URL for {string}")
+	public void open_URL_for(String URL) {
+		System.setProperty("webdriver.chrome.driver","C:\\Snehal\\Full Stack Tester\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		// webdriver is interface and chromedriver is class
+		
+		driver.get(URL);
+	}
+	
+@Then("Validate the Tittle of the current page")
+public void validate_the_Tittle_of_the_current_page() {
+ String ActualtitleOfPage = driver.getTitle();
+ String ExpectedtitleOfPage = "Calorie Calculator";
+ Assert.assertEquals(ExpectedtitleOfPage, ActualtitleOfPage);
+ System.out.println("Expected Title :"+ExpectedtitleOfPage);
+ System.out.println("Actual Title : "+ActualtitleOfPage);
+}
+
+
+@When("Click on BMI Calculator")
+public void click_on_BMI_Calculator() {
+    System.out.println("User click on BMI calculator tab");
+    driver.findElement(By.xpath("//*[@id=\"menuon\"]/a")).click();
+}
+
+@When("Enter {string}")
+public void enter(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@When("Tap on Calulate BMI")
+public void tap_on_Calulate_BMI() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("Capture the BMI Result value & Print it \\(getText\\())")
+public void capture_the_BMI_Result_value_Print_it_getText() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("Close the browser")
+public void close_the_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+	
+	
+}

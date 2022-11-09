@@ -1,0 +1,29 @@
+package Batch1Test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CalculatorTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	//https://www.calculator.net/calorie-calculator.html
+	
+	System.setProperty("webdriver.chrome.driver","C:\\Snehal\\Full Stack Tester\\Selenium\\chromedriver_win32\\chromedriver.exe");
+	WebDriver driver=new ChromeDriver();
+	// webdriver is interface and chromedriver is class
+	
+	driver.get("https://www.calculator.net/calorie-calculator.html");
+	
+	driver.findElement(By.id("cage")).clear();
+	driver.findElement(By.id("cage")).sendKeys("26");
+	driver.findElement(By.id("cheightmeter")).clear();
+	driver.findElement(By.id("cheightmeter")).sendKeys("189");
+	driver.findElement(By.id("ckg")).clear();
+	driver.findElement(By.id("ckg")).sendKeys("52");
+	
+	
+	}
+}

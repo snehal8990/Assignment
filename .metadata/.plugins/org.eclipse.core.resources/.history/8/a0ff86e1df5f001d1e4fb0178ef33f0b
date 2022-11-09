@@ -1,0 +1,52 @@
+package StepDefination;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class CalculatorBMI {
+	Webdriver 
+	@Given("Open URL for {string}")
+	public void open_URL(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+	
+@Then("Validate the Tittle of the current page")
+public void validate_the_Tittle_of_the_current_page() {
+  
+}
+
+
+@When("Click on BMI Calculator")
+public void click_on_BMI_Calculator() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@When("Enter {string}")
+public void enter(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@When("Tap on Calulate BMI")
+public void tap_on_Calulate_BMI() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("Capture the BMI Result value & Print it \\(getText\\())")
+public void capture_the_BMI_Result_value_Print_it_getText() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+
+@Then("Close the browser")
+public void close_the_browser() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new cucumber.api.PendingException();
+}
+	
+	
+}

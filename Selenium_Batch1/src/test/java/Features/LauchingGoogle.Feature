@@ -1,0 +1,26 @@
+@Full
+Feature: To test Google
+
+Scenario: To launch google end enter some value on search box
+Given The Google Website Launch
+When Search bar is visible
+Then Enter text SRM
+
+
+@Regression @Sne
+Scenario: To launch google end enter some value on search box
+Given The Google Website Launch
+When Search bar is visible
+Then Enter text SRM
+
+@Sne
+Scenario: To launch google end enter some value on search box
+Given The Google Website Launch
+When Search bar is visible
+Then Enter text Snehal
+
+
+Scenario: To launch google end enter some value on search box
+Given The Google Website Launch
+When Search bar is visible
+Then Enter text SRM

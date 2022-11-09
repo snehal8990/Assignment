@@ -1,0 +1,38 @@
+package StepDefination;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class TwitterLaunch {
+	
+	@Given("Launch Browser and enter url")
+	public void launch_Browser_and_enter_url() {
+	    // Write code here that turns the phrase above into concrete actions
+		System.setProperty("webdriver.chrome.driver","C:\\Snehal\\Full Stack Tester\\Selenium\\chromedriver_win32\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+	}
+
+	@When("Enter user id as {string}")
+	public void enter_user_id_as(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("User click on next button")
+	public void user_click_on_next_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("Enter passowrd as {string}")
+	public void enter_passowrd_as(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+
+}

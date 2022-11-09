@@ -1,0 +1,5 @@
+Feature: Calulate BMI
+
+Scenario: Check for Title of Page
+Given Open URL for "https://www.calculator.net/calorie-calculator.html"
+Then Validate the Tittle of the current page
